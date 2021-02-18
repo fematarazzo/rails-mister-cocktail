@@ -1,0 +1,31 @@
+.card-img-top {
+  height: 280px;
+  object-fit: cover;
+}
+
+.card-main {
+  height: 400px;
+}
+
+.img-fluid {
+  height: 400px;
+  object-fit: cover;
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+}
+
+.show {
+  z-index: 100;
+  position: relative;
+  top: 200px;
+}
+
+.show-top {
+  position: relative;
+  top: 150px;
+  left: 100px;
+  color: $white;
+  margin: 0 auto;
+  font-size: 80px;
+}
