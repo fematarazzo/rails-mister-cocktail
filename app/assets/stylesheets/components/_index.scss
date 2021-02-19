@@ -3,3 +3,9 @@
 @import "avatar";
 @import "card";
 @import "navbar";
+
+body {
+  background-image: url(/assets/spritz2.svg);
+  background-repeat: no-repeat;
+  background-position: 0 80px;
+}

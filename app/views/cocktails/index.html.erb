@@ -1,5 +1,18 @@
 <div class="container mt-3">
-  <h1 class="mb-3 text-center">Cocktails</h1>
+  <div id="typed-strings">
+    <h1>Amazing Cocktails</h1>
+    <h1>Amazing Experiences</h1>
+  </div>
+  <h1 class="text-center" id="typed"></h1>
+  <script>
+    var typed = new Typed('#typed', {
+      stringsElement: '#typed-strings',
+      typeSpeed: 50,
+      backSpeed: 50,
+      smartBackspace: true,
+      showCursor: false
+    });
+  </script>
   <div class="d-flex justify-content-evenly flex-wrap">
     <% @cocktails.each do |cocktail| %>
       <div class="card m-2 card-main" style="width: 22rem;">
