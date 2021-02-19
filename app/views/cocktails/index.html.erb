@@ -1,7 +1,7 @@
 <div class="container mt-3">
   <div id="typed-strings">
-    <h1>Amazing Cocktails</h1>
-    <h1>Amazing Experiences</h1>
+    <h1 class="overflow-hidden">Amazing Cocktails</h1>
+    <h1 class="overflow-hidden">Amazing Experiences</h1>
   </div>
   <h1 class="text-center typed-font" id="typed"></h1>
   <script>
@@ -20,13 +20,15 @@
           <%= cl_image_tag cocktail.photo.key, class:"card-img-top" %>
         </div>
         <div class="card-body">
-          <h5 class="card-title"> <%= cocktail.name %></h5>
+          <%= link_to cocktail_path(cocktail), class:"card-link card-title" do %>
+            <h5 class="card-title"> <%= cocktail.name %></h5>
+          <% end %>
           <hr>
           <div class="d-flex text-right">
             <%= link_to "More info", cocktail_path(cocktail), class:"card-link" %>
-            <%= link_to "Edit", edit_cocktail_path(cocktail), class:"card-link yellow" %>
+            <%= link_to "Edit", edit_cocktail_path(cocktail), class:"card-link card-edit" %>
             <%= link_to "Delete", cocktail_path(cocktail), method: :delete,
-            data: { confirm: "Are you sure?" }, class:"card-link red" %>
+            data: { confirm: "Are you sure?" }, class:"card-link card-delete" %>
           </div>
         </div>
       </div>

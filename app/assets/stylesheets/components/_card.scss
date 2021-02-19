@@ -25,7 +25,7 @@
   top: 200px;
 }
 
-.show-top {
+#show-top {
   position: relative;
   top: 150px;
   left: 100px;
@@ -36,4 +36,24 @@
 
 #card-description {
   width: 500px;
+}
+
+.card-title {
+  color: $black;
+}
+
+.card-edit {
+  color: #ffc52e;
+}
+
+.card-edit:hover {
+  color: #c49725;
+}
+
+.card-delete {
+  color: #e15845;
+}
+
+.card-delete:hover {
+  color: #9e3d31;
 }
