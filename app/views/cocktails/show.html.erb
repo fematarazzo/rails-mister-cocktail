@@ -2,13 +2,13 @@
   <div class="d-flex">
     <%= cl_image_tag @cocktail.photo.key, class:'img-fluid w-100' %>
     <h1 class="card-title text-center" id="show-top"> <%= @cocktail.name %></h1>
-    <div>
+    <div class="text-right">
     <%= link_to "Edit", edit_cocktail_path(@cocktail), class:"btn btn-success m-3" %>
     <%= link_to "Delete", cocktail_path(@cocktail), method: :delete, data: { confirm: "Are you sure?" }, class:"btn btn-danger m-3" %>
     </div>
   </div>
-  <div class="container d-flex justify-content-around show">
-    <div class="card text-dark" id="card-description" style="max-width: 20rem;">
+  <div class="container d-flex justify-content-around flex-wrap show">
+    <div class="card text-dark mb-3" id="card-description" style="max-width: 30rem;">
       <div class="card-body">
         <h3 class="card-title">Description</h3>
         <div class="d-flex flex-column bd-highlight">
