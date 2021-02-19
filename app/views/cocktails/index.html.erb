@@ -3,21 +3,21 @@
     <h1>Amazing Cocktails</h1>
     <h1>Amazing Experiences</h1>
   </div>
-  <h1 class="text-center" id="typed"></h1>
+  <h1 class="text-center typed-font" id="typed"></h1>
   <script>
     var typed = new Typed('#typed', {
       stringsElement: '#typed-strings',
       typeSpeed: 50,
       backSpeed: 50,
       smartBackspace: true,
-      showCursor: false
+      showCursor: false,
     });
   </script>
   <div class="d-flex justify-content-evenly flex-wrap">
     <% @cocktails.each do |cocktail| %>
       <div class="card m-2 card-main" style="width: 22rem;">
         <div class="card-image">
-          <img src="https://source.unsplash.com/random/?cocktail" class="card-img-top" alt="A cocktail">
+          <%= cl_image_tag cocktail.photo.key, class:"card-img-top" %>
         </div>
         <div class="card-body">
           <h5 class="card-title"> <%= cocktail.name %></h5>
