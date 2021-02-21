@@ -1,16 +1,18 @@
 <div class="container mt-3">
-  <div id="typed-strings">
-    <h1 class="overflow-hidden">Amazing Cocktails</h1>
-    <h1 class="overflow-hidden">Amazing Experiences</h1>
+  <div id="typed-strings" class="banner-area">
+    <h1>Amazing <span class="element"></span></h1>
   </div>
-  <h1 class="text-center typed-font" id="typed"></h1>
   <script>
-    var typed = new Typed('#typed', {
-      stringsElement: '#typed-strings',
-      typeSpeed: 50,
-      backSpeed: 50,
+    var typed = new Typed('.element', {
+      strings: [
+        'Drinks',
+        'Cocktails',
+        'Experiences'
+      ],
       smartBackspace: true,
-      showCursor: false,
+      typeSpeed: 60,
+      backSpeed: 60,
+      loop: true,
     });
   </script>
   <div class="d-flex justify-content-evenly flex-wrap">
@@ -34,14 +36,5 @@
       </div>
     <% end %>
   </div>
-  <div class="footer">
-    <div class="footer-links">
-      <a href="https://github.com/fematarazzo"><i class="fab fa-github"></i></a>
-      <a href="https://instagram.com/felipe_matarazzo"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/felipemps/"><i class="fab fa-linkedin"></i></a>
-    </div>
-    <div class="footer-copyright">
-      This website was made by Felipe Matarazzo
-    </div>
-  </div>
+
 </div>

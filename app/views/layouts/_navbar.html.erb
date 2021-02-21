@@ -1,0 +1,13 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon ">
+  <%= link_to "Toasty Cocktail", cocktails_path, class:"nav-item active" %>
+  <button class="navbar-toggler" type="button"></button>
+  <div>
+    <ul class="navbar-nav">
+      <li>
+        <%= link_to new_cocktail_path, class: "nav-link" do%>
+          <button type="button" class="btn btn-outline-primary">Add cocktail</button>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</div>

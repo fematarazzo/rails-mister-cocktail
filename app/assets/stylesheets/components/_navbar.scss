@@ -11,13 +11,15 @@
   width: 40px;
 }
 
-.navbar-brand {
+.nav-item {
   color: #e15845;
   font-family: 'Lobster Two', cursive;
+  font-size: 20px;
 }
 
-.navbar-brand:hover {
+.nav-item:hover {
  color: #9e3d31;
+ text-decoration: none;
 }
 
 
