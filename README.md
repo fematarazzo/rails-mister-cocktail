@@ -1,24 +1,12 @@
-# README
+# Toasty Cocktail
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+[Toasty Cocktail](https://toastycocktail.herokuapp.com/) is a cocktail recipe organizer. Built during Le Wagon in 2 days.
 
-* System dependencies
 
-* Configuration
 
-* Database creation
+## Use
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Look for cocktails, check their ingredients, edit or delete if desired.
